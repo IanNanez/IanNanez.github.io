@@ -1,123 +1,299 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-    <title>Ian Nanez's Personal Web Protal</title>
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel=stylesheet type=text/css href="css/styles.css">
-    
-    </head>
-    
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Ian's Web Portal</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="black">
+
+<!-- NAVBAR-->
+<div id="nav">
+    <div class="navbar-fixed" style="height:5%">
+        <nav class="black" style="height:7%">
+            <div class="nav-wrapper container">
+		   	<ul class="section center table-of-contents"style="padding-top:0%">
+		        <li><a href="#home" class="white-text">Home</a></li>
+		        <li><a href="#aboutme" class="white-text">About Me</a></li>
+		        <li><a href="#projects" class="white-text">My Projects</a></li>
+            <li><a href="#myart" class="white-text">My Art</a></li>
+            <li><a href="#end" class="white-text">Contact Me</a></li>
+
+
+   		   </ul>
+   	             
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+<!-- Introduction container -->
+
+  <div id="introduction" class="parallax-container">
+    <div class="section no-pad-bot valign-wrapper">
+      <div class="container">
+      	<div class="row center">  
+      		<h1 class="header transparent"> </h1>
+        </div>
+        <br><br>
+        <!--<h1 class="header center thin grey-text" style="font-size:150px; font-weight:200">Ian Nanez</h1>-->
+        
+
+        
+
+        </div>
+
+        
           
-      <body>
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-            
-            <!--Import jQuery before materialize.js-->
-            <script type="text/javascript" src="jquery-2.1.4.js"></script>
-            <script type="text/javascript" src="js/materialize.min.js"></script>
-            <script type="text/javascript" src="js/javascript.js"></script>
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      
-            <div class="navbar-fixed transparent">
-            <nav class="blue darken-3" role="navigation">
-              <div class="nav-wrapper container">
-                <a id="logo-container" class="brand-logo"></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                  <ul class="left hide-on-med-and-down"> 
-                  <li><a href="#home" class="white-text">Home</a></li> 
-                  <li><a href="#aboutme" class="white-text">About Me</a></li> 
-                  <li><a href="#projects" class="white-text">Projects</a></li>
-                  <li><a href="#contactme" class="white-text">Contact Me</a></li>
+        <br><br>
+        
+      </div>
+    </div>
+    <div class="parallax scrollspy" id="home"><img src="images/TrainSeats.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+<!-- 
+      ABOUT ME::: The following Division is the block I repeat for the content
+   -->
+	  <div class="section container  text-section">
+	  	<div class="row">
+		  	<div class="col l12"> 
+		  		<h1 class="grey-text"> About Me</h1>
+          <div class="row scrollspy" id="aboutme">
+                      <div class="col m4">
+                          <img src="images/headshot.png"  width="250">
+                      </div>
+                      <div class="col m8">      
+                        <p class="grey-text"> Hi, my name is Ian Nanez, and I am an aspiring renasance man. I attend Amherst College, where I study Physics and Computer Science, and am a member of the orchestra, the Brazilian Jiu Jitsu club, and the leader of the Electronics Club. </p>
+                        <p class="grey-text">At school I deveolped interst in science and technnology, which lead me to working with the Innovation Team, Deloitte's tech focused stealth group. The teams identifies immerging technology, then implements tech solutions. My role was to research and help implement a Blockchain based employee engagement application. During my internship I gained an acute understanding of this technoogy.</p>
+                        <p class="grey-text">Even though I love technology, I have an interest an passion for creatign art. The bottom of this page features some of the works I have completed this summer.</p>
+                      </div>    
+                  </div>
+                  <div class="row scrollspy" id="projects">
+                  <h1 class="grey-text"> My Projects</h1>
+
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">lock</i>Project Art Vault</div>
+                      <div class="collapsible-body white"><p>A Etherum based art gallery. Artista can upload their work as elements on the Blockchian, and patrons can purchase them with a custom currency.</p></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">settings</i>Project Davinci</div>
+                      <div class="collapsible-body white"><p>A massive (6' by 6') CNC pen plotter. This robot is essentially a giant drawing machine. Built with the Amherst College Electronics Club. Read about our project at <a href="http://amherstec.github.io">http://amherstec.github.io</a>.</p></div>
+                    </li>
+                    
                   </ul>
-                </div>
-              </nav>
-             </div>
+		  	</div>
+        </div>
+		  	
+	  	</div>
+	 </div>
 
-             <div id="home" class="section scrollspy teal darken-3">
-               <div id="index-banner">
-                 <img class="responsive-img teal darken-3" src="images/name2.png"></img> 
-               </div>
-             </div>
-           
-           <div class="parallax-container">
-                <div class="parallax"><img src="images/gugenheim.jpg"></div>
-            </div>
-            
-            <div id="aboutme" class="section scrollspy">
-              <div class="container">
-                <div  class="row">
 
-                  <h3 class="grey-text">Who Am I?</h3>
+   
+
+	<div  id="myart" class="section scrollspy parallax-container" style="height:1350px">  
+		<div class="section no-pad-bot valign-wrapper">
+     		<div class="container">
+          <h1 class="black-text">My Art</h1>
+     			<ul id="staggered-1" class="white-text">
+
+				        <li style="opacity:0;">
+                  <div class="row transparent">
+                      <div class="col m4 transparent">
+                          <img class="materialboxed" src="images/Face.jpeg"  width="250">
+                      </div>
+                      <div class="col m8 transparent">      
+                        <img class="materialboxed" src="images/Flower.jpeg"  width="500">
+                      </div>    
+                  </div>
+                
+                  <div class="row transparent">
+                      <div class="col m8 transparent">
+                          <img class="materialboxed" src="images/vapor.jpeg"  width="500">
+                      </div>
+                      <div class="col m4 transparent">      
+                        <img class="materialboxed" src="images/FLo.jpeg"  width="250">
+                      </div>    
+                  </div>
+
+                  <div class="row transparent">
+                      <div class="col m4 transparent">
+                          <img class="materialboxed" src="images/Mask.jpeg"  width="250">
+                      </div>
+                      <div class="col m8 transparent">      
+                        <img class="materialboxed" src="images/Recline.jpeg"  width="500">
+                      </div>  
+                  </div>
+
                   
-                  <div class="col l6"><img src="images/headshot.png"></div>
-                  <div class="col l6" style="padding-top:30px">Hello! My name's Ian Nanez and I am a physics and computer science student at Amherst College.  I dream of oneday becoming an engineer who uses my knolwdge of the physical world and some savy code to create the contraptions of tomorrow. I have spent When I am not not in the lab examining the fundimenal nature of the universe, or in my workshop creating my latest doomsday device, or writing code that will help me take over the world, I am taking long walks trying to take up all of lifes wonders.</div>
-               </div>
-              </div>
-            </div>
+                      
+                 
+                </li>
 
-            </div>
-              <div class="parallax-container">
-                <div class="parallax"><img src="images/mountains-tree.jpg"></div>
-            </div>
+                
+				      </ul>
+     		</div>
+     	</div>
 
 
-              <div id="projects" class="section scrollspy">
-                <div class="container">
-                   <ul class="collapsible" data-collapsible="accordion">
-                      <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                      </li>
-                      <li>
-                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                      </li>
-                      <li>
-                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                      </li>
-                    </ul>
-                </div>
-              </div>
+	<div class="parallax"><img src="images/sakura2.jpg" alt="Unsplashed background img 1"></div>
+	</div>
 
 
-            </div>
-              <div class="parallax-container">
-                <div class="parallax"><img src="images/low-poly-texture-2.png"></div>
-            </div>
-
-            <div id="contactme" class=Section scrollspy>
-              <div class="cotainer">
-                <div class="row">
-                  <div class="col l6">Phone</div>
-                  <div class="col l6"> 203-451-8408</div>
-                  <div class="col l6">email</div>
-                  <div class="col l6"> ianneze@gmail.com</div>
-                </div>
-              </div>
-            </div>
+	
+  </div>
+  </div>
 
 
-    <script>
-      $(document).ready(function(){
-          $('.parallax').parallax();
+
+
+
+  <footer id="end"class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col m9">
+          <h5 class="grey-text">About Me</h5>
+          <p class="grey-text">Hi, I am Ian Nanez.  I am currently both an intern at Deloitte's US Innovation Team and a rising senior at Amherst College, where I study Physics and Computer Science. Over the summer, I worked on launching the pilot of a blockchain based loyalty and rewards mobile app. When I am not immersed in technology, you can find me either reading, drawing, or taking contemplative nature walks.</p>
+
+
+        </div>
+        
+        <div class="col m3">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="blue-text" href="mailto:inanez17@amherst.edu">inanez17@amherst.edu</a></li>
+            <li><a class="blue-text" href="mailto:inaneze@gmail.com">inaneze@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text">Ian Nanez</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  
+  <script>
+    $(document).ready(function() {
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'music/BlueMoon.mp3');
+        //audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+
+        $.get();
+
+        audioElement.addEventListener("load", function() {
+            audioElement.play();
+        }, true);
+
+        $('.play').click(function() {
+            audioElement.play();
         });
-      </script>
-    <script>
-     $(document).ready(function(){
-       // Activate the side menu 
-       $(".button-collapse").sideNav();
-      });
-    </script>  
-    <script>
-      $(document).ready(function(){
-        $('.scrollspy').scrollSpy();
-      });
-    </script>
 
-   </body>
- </html>
+        $('.pause').click(function() {
+            audioElement.pause();
+        });
+    });
 
+	 $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+
+
+	 $(document).ready(function(){
+
+	 	$('#push,secton').pushpin({ top:$('#push').height() });
+
+  });
+
+</script>
+
+<script type="text/javascript">
+      var options = [
+
+        {selector: '#staggered-1', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-1")' }
+      ];
+      Materialize.scrollFire(options);
+</script>
+
+<script type="text/javascript">
+      var options = [
+
+        {selector: '#staggered-2', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-2")' }
+      ];
+      Materialize.scrollFire(options);
+</script>
+
+<script type="text/javascript">
+      var options = [
+
+        {selector: '#staggered-3', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-3")' }
+      ];
+      Materialize.scrollFire(options);
+</script>
+
+<script type="text/javascript">
+      var options = [
+
+        {selector: '#staggered-4', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-4")' }
+      ];
+      Materialize.scrollFire(options);
+</script>
+
+<script type="text/javascript">
+      var options = [
+
+        {selector: '#staggered-5', offset: 400, callback: 'Materialize.showStaggeredList("#staggered-5")' }
+      ];
+      Materialize.scrollFire(options);
+</script>
+
+    <script type="text/javascript"> 
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });</script>
+
+
+<!-- MODAL Script-->
+
+
+<script type="text/javascript">
+        $(document).ready(function(){
+          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+          $('.modal-trigger').leanModal();
+        });
+</script>
+
+<!--Collapsibles-->
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+
+</script>
+
+
+  </body>
+</html>
